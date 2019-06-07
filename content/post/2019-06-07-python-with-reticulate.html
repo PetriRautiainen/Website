@@ -1,0 +1,60 @@
+---
+title: Python with Reticulate
+author: Petri Rautiainen
+date: '2019-06-07'
+slug: python-with-reticulate
+categories:
+  - R
+  - Python
+tags:
+  - R Python
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-06-07T18:26:06Z'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>Let’s download some packages.</p>
+<p>And calculate European call.</p>
+<p>{python echo=TRUE}
+import math
+import numpy as np
+from timeit import default_timer as timer
+start = timer()
+S = 100
+K = 105
+T = 1
+r = 0.05
+sigma = 0.2
+I = 100000
+z = np.random.standard_normal(I)
+ST = S * np.exp((r-0.5*sigma**2)<em>T + sigma </em> math.sqrt(T)<em>z)
+hT = np.maximum(ST - K, 0)
+C0 = math.exp(-r</em>T)*np.mean(hT)
+print(‘Value of %5.3f.’ % C0)
+end = timer()
+print(‘Elapsed time in seconds %5.3f.’ % (end - start))</p>
+<pre class="r"><code>start = Sys.time()
+S = 100
+K = 105 
+T = 1 
+r = 0.05
+sigma = 0.2
+I = 100000
+z = rnorm(I)
+ST = S * exp((r-0.5*sigma**2)*T + sigma * sqrt(T)*z)
+hT = pmax(ST - K, 0)
+C0 = exp(-r*T)*mean(hT)
+C0</code></pre>
+<pre><code>## [1] 8.031604</code></pre>
+<pre class="r"><code>end = Sys.time() - start
+print(paste(&quot;Elapsed time in seconds:&quot;, end))</code></pre>
+<pre><code>## [1] &quot;Elapsed time in seconds: 0.0201637744903564&quot;</code></pre>
