@@ -560,10 +560,10 @@ ST = S * exp((r-0.5*sigma**2)*T + sigma * sqrt(T)*z)
 hT = pmax(ST - K, 0)
 C0 = exp(-r*T)*mean(hT)
 C0</code></pre>
-<pre><code>## [1] 8.031604</code></pre>
+<pre><code>## [1] 7.966739</code></pre>
 <pre class="r"><code>end = Sys.time() - start
 print(paste(&quot;Elapsed time in seconds:&quot;, end))</code></pre>
-<pre><code>## [1] &quot;Elapsed time in seconds: 0.0201637744903564&quot;</code></pre>
+<pre><code>## [1] &quot;Elapsed time in seconds: 0.0203638076782227&quot;</code></pre>
 
     </div>
 

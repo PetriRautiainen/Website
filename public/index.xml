@@ -148,10 +148,10 @@ ST = S * exp((r-0.5*sigma**2)*T + sigma * sqrt(T)*z)
 hT = pmax(ST - K, 0)
 C0 = exp(-r*T)*mean(hT)
 C0&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 8.031604&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 7.966739&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;end = Sys.time() - start
 print(paste(&amp;quot;Elapsed time in seconds:&amp;quot;, end))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;Elapsed time in seconds: 0.0201637744903564&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;Elapsed time in seconds: 0.0203638076782227&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
