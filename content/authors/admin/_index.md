@@ -1,18 +1,15 @@
 ---
 authors:
 - admin
-bio: I am interest about quantitative analysis with R and Python.
+bio: I am interested in quantitative analysis with R and Python.
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: MSc in Finance
+    institution: Turku School of Economics
+    year: 2015
+  - course: BSc in Finance
+    institution: Turku School of Economics
+    year: 2014
 email: ""
 interests:
 - Financial Analysis
@@ -35,5 +32,4 @@ user_groups:
 - Visitors
 ---
 
-I am financial analyst from Finland with experience in quantitative analysis. 
-
+Graduated from Turku School of Economics in three years. Worked with quantitative equity strategies at Elo Pension fund. Currently real estate analyst with Standard Life Aberdeen. Interested in leveraging Python/R data analysis skills and in open source tools.
