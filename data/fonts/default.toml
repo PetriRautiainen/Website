@@ -2,13 +2,13 @@
 name = "Default"
 
 # Optional Google font URL
-google_fonts = "Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono"
+google_fonts = "EG Garamond:400,700|EG Garamond:400,400italic,700|EG Garamond"
 
 # Font families
-heading_font = "Montserrat"
-body_font = "Roboto"
-nav_font = "Roboto"
-mono_font = "Roboto Mono"
+heading_font = "EG Garamond"
+body_font = "EG Garamond"
+nav_font = "EG Garamond"
+mono_font = "EG Garamond"
 
 # Font size
 font_size = "20"
