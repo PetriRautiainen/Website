@@ -28,8 +28,7 @@ library(reticulate)
 ```
 
 And calculate European call. 
-
-{python echo=TRUE}
+```{python echo=TRUE}
 import math
 import numpy as np
 from timeit import default_timer as timer
@@ -47,6 +46,9 @@ C0 = math.exp(-r*T)*np.mean(hT)
 print('Value of %5.3f.' % C0)
 end = timer()
 print('Elapsed time in seconds %5.3f.' % (end - start))
+```
+
+And in R.
 
 ```{r echo=TRUE}
 start = Sys.time()
