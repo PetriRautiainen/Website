@@ -118,24 +118,26 @@
 
 &lt;p&gt;Let’s download some packages.&lt;/p&gt;
 &lt;p&gt;And calculate European call.&lt;/p&gt;
-&lt;p&gt;{python echo=TRUE}
-import math
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;import math
 import numpy as np
 from timeit import default_timer as timer
 start = timer()
 S = 100
-K = 105
-T = 1
+K = 105 
+T = 1 
 r = 0.05
 sigma = 0.2
 I = 100000
 z = np.random.standard_normal(I)
-ST = S * np.exp((r-0.5*sigma**2)&lt;em&gt;T + sigma &lt;/em&gt; math.sqrt(T)&lt;em&gt;z)
+ST = S * np.exp((r-0.5*sigma**2)*T + sigma * math.sqrt(T)*z)
 hT = np.maximum(ST - K, 0)
-C0 = math.exp(-r&lt;/em&gt;T)*np.mean(hT)
-print(‘Value of %5.3f.’ % C0)
-end = timer()
-print(‘Elapsed time in seconds %5.3f.’ % (end - start))&lt;/p&gt;
+C0 = math.exp(-r*T)*np.mean(hT)
+print(&amp;#39;Value of %5.3f.&amp;#39; % C0)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Value of 8.008.&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;end = timer()
+print(&amp;#39;Elapsed time in seconds %5.3f.&amp;#39; % (end - start))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Elapsed time in seconds 0.142.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And in R.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;start = Sys.time()
 S = 100
 K = 105 
@@ -148,10 +150,10 @@ ST = S * exp((r-0.5*sigma**2)*T + sigma * sqrt(T)*z)
 hT = pmax(ST - K, 0)
 C0 = exp(-r*T)*mean(hT)
 C0&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 7.966739&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 7.995249&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;end = Sys.time() - start
 print(paste(&amp;quot;Elapsed time in seconds:&amp;quot;, end))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;Elapsed time in seconds: 0.0203638076782227&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;Elapsed time in seconds: 0.0197596549987793&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

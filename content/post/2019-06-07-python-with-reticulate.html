@@ -24,24 +24,26 @@ projects: []
 
 <p>Let’s download some packages.</p>
 <p>And calculate European call.</p>
-<p>{python echo=TRUE}
-import math
+<pre class="python"><code>import math
 import numpy as np
 from timeit import default_timer as timer
 start = timer()
 S = 100
-K = 105
-T = 1
+K = 105 
+T = 1 
 r = 0.05
 sigma = 0.2
 I = 100000
 z = np.random.standard_normal(I)
-ST = S * np.exp((r-0.5*sigma**2)<em>T + sigma </em> math.sqrt(T)<em>z)
+ST = S * np.exp((r-0.5*sigma**2)*T + sigma * math.sqrt(T)*z)
 hT = np.maximum(ST - K, 0)
-C0 = math.exp(-r</em>T)*np.mean(hT)
-print(‘Value of %5.3f.’ % C0)
-end = timer()
-print(‘Elapsed time in seconds %5.3f.’ % (end - start))</p>
+C0 = math.exp(-r*T)*np.mean(hT)
+print(&#39;Value of %5.3f.&#39; % C0)</code></pre>
+<pre><code>## Value of 8.008.</code></pre>
+<pre class="python"><code>end = timer()
+print(&#39;Elapsed time in seconds %5.3f.&#39; % (end - start))</code></pre>
+<pre><code>## Elapsed time in seconds 0.142.</code></pre>
+<p>And in R.</p>
 <pre class="r"><code>start = Sys.time()
 S = 100
 K = 105 
@@ -54,7 +56,7 @@ ST = S * exp((r-0.5*sigma**2)*T + sigma * sqrt(T)*z)
 hT = pmax(ST - K, 0)
 C0 = exp(-r*T)*mean(hT)
 C0</code></pre>
-<pre><code>## [1] 7.966739</code></pre>
+<pre><code>## [1] 7.995249</code></pre>
 <pre class="r"><code>end = Sys.time() - start
 print(paste(&quot;Elapsed time in seconds:&quot;, end))</code></pre>
-<pre><code>## [1] &quot;Elapsed time in seconds: 0.0203638076782227&quot;</code></pre>
+<pre><code>## [1] &quot;Elapsed time in seconds: 0.0197596549987793&quot;</code></pre>
