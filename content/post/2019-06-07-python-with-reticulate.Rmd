@@ -25,6 +25,7 @@ Let's download some packages.
 ```{r include=FALSE}
 install.packages("reticulate")
 library(reticulate)
+use_python("/usr/bin/python3")
 ```
 
 And calculate European call. 
