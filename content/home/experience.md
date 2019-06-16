@@ -40,6 +40,7 @@ date_format = "Jan 2006"
   date_start = "2017-02-01"
   date_end = "2017-03-31"
   description = """
+  
   * Project work at a startup focusing on unlisted securities: financial analysis, communications and programming.
   """
 
@@ -51,6 +52,7 @@ date_format = "Jan 2006"
   date_start = "2016-05-09"
   date_end = "2016-12-31"
   description = """
+  
   * Researched, backtested and presented a novel method to screen equities for uncompensated distress risk. Used Bloomberg to run EQS/EQBT/FTST, Excel to further analyze and PowerPoint to present.
   * Supported quantitative strategies with backtesting and risk profiling. Quickly discovered potential conflicts in return profiles of certain strategies. Research was done with Excel and Bloomberg.
   * Built automatic Excel tools for default risk models and macroeconomic analysis. Provided R code in Markdown for risk-based equity portfolio weighting and ran backtests on stock data retrieved with Quandl API.

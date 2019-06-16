@@ -37,6 +37,6 @@ user_groups:
 - Visitors
 ---
 
-I graduated in 2015 with a major in finance with a focus on quantitative finance and mathematical analysis. After graduation I had talks to continue to a PhD as I enjoyed statistical analysis, learning and tackling finance theories. However, after landing my first internship - at the systematic investment unit at Elo Pension Fund -, I have been more focussed on how to apply quantitative tools to improve investment processes.
+I graduated in 2015 with a major in finance with a focus on quantitative finance and mathematical analysis. After graduation I had talks to continue to a PhD as I enjoyed statistical analysis, learning and tackling finance theories. However, after landing my first internship in the industry - at the systematic investments team at Elo Pension Fund -, I have been more focussed on how to apply quantitative tools to improve real investment processes.
 
 After hitting the limits of Excel, I learned how to program with R. After finding out investment algorithm backtest website Quantopian required Python, I learned its basics. After wanting to test my skillset with more concrete data science problems, I joined data analysis cloud platform Kaggle. For a few years I have been very inspired by the possibilities of these cutting edge tools and the open and helpful community that supports them. This blog is my way of giving something back and keeping records of my own thoughts.
