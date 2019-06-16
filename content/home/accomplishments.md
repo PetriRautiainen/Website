@@ -40,7 +40,7 @@ date_format = "Jan 2006"
 
 [[item]]
   organization = "Datacamp"
-  organization_url = "www.datacamp.com"
+  organization_url = "https://www.datacamp.com"
   title = "Datacamp courses and tracks"
   url = "https://www.datacamp.com/profile/petrirautiainen"
   certificate_url = "https://www.datacamp.com/profile/petrirautiainen"
