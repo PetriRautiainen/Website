@@ -25,7 +25,7 @@ date_format = "Jan 2006"
   url = ""
   certificate_url = "https://petrirautiainen.files.wordpress.com/2016/01/ktm-todistus.pdf"
   date_start = "2012-09-01"
-  date_end = "2015-31-12"
+  date_end = "2015-12-31"
   description = ""
 
 [[item]]
