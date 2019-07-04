@@ -40,6 +40,7 @@ date_format = "Jan 2006"
   date_start = "2017-02-01"
   date_end = "2017-03-31"
   description = """
+  Responsibilities include:
   
   * Project work at a startup focusing on unlisted securities: financial analysis, communications and programming.
   """
@@ -52,6 +53,7 @@ date_format = "Jan 2006"
   date_start = "2016-05-09"
   date_end = "2016-12-31"
   description = """
+  Responsibilities include:
   
   * Researched, backtested and presented a novel method to screen equities for uncompensated distress risk. Used Bloomberg to run EQS/EQBT/FTST, Excel to further analyze and PowerPoint to present.
   * Supported quantitative strategies with backtesting and risk profiling. Quickly discovered potential conflicts in return profiles of certain strategies. Research was done with Excel and Bloomberg.
